@@ -1,5 +1,3 @@
-import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
-import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.*;
 
@@ -10,13 +8,9 @@ import software.amazon.awssdk.services.s3.model.*;
 public class BucketOperations {
 
     private final S3Client s3Client;
-    private static final Region region = Region.AP_SOUTH_1;
 
     public BucketOperations(){
-        s3Client= S3Client.builder()
-                .credentialsProvider(ProfileCredentialsProvider.create())
-                .region(region)
-                .build();
+        s3Client= Client.create();
 
     }
 
@@ -29,7 +23,7 @@ public class BucketOperations {
         CreateBucketRequest createBucketRequest=CreateBucketRequest.builder()
                 .bucket(bucketName)
                 .createBucketConfiguration(CreateBucketConfiguration.builder()
-                        .locationConstraint(region.id())
+                        .locationConstraint(Constants.region.id())
                         .build())
                 .build();
         return s3Client.createBucket(createBucketRequest);
@@ -41,7 +35,7 @@ public class BucketOperations {
         return s3Client.listBuckets(listBucketsRequest);
     }
 
-    public DeleteBucketResponse deleteBucket(String bucketName){
+    public DeleteBucketResponse deleteEmptyBucket(String bucketName){
         DeleteBucketRequest deleteBucketRequest = DeleteBucketRequest.builder()
                 .bucket(bucketName)
                 .build();

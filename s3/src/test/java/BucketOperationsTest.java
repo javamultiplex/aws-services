@@ -38,7 +38,7 @@ public class BucketOperationsTest {
     @Test
     @Order(3)
     public void shouldDeleteBucket(){
-        DeleteBucketResponse deleteBucketResponse = bucketOperations.deleteBucket("bucket-javamultiplex-12");
+        DeleteBucketResponse deleteBucketResponse = bucketOperations.deleteEmptyBucket("bucket-javamultiplex-12");
         assertNotNull(deleteBucketResponse);
     }
 
