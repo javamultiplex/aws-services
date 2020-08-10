@@ -1,4 +1,4 @@
-# aws-services
+# AWS Services
 Code Examples of AWS Services in Java
 
 # AWS Networking
