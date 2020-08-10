@@ -7,3 +7,4 @@
 5) Security Group
 6) VPC Flow logs
 7) Amazon VPC traffic Mirroring
+8) VPC Peering
