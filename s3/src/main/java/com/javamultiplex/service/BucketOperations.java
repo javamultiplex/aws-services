@@ -24,12 +24,12 @@ public class BucketOperations {
     }
 
     /**
-     * @param bucketName
+     * @param bucket
      * @return
      */
-    public void createBucket(String bucketName) {
+    public void createBucket(String bucket) {
         CreateBucketRequest createBucketRequest = CreateBucketRequest.builder()
-                .bucket(bucketName)
+                .bucket(bucket)
                 .createBucketConfiguration(CreateBucketConfiguration.builder()
                         .locationConstraint(Region.AP_SOUTH_1.id())
                         .build())
@@ -46,12 +46,12 @@ public class BucketOperations {
     }
 
     /**
-     * @param bucketName
+     * @param bucket
      * @return
      */
-    public void deleteEmptyBucket(String bucketName) {
+    public void deleteEmptyBucket(String bucket) {
         DeleteBucketRequest deleteBucketRequest = DeleteBucketRequest.builder()
-                .bucket(bucketName)
+                .bucket(bucket)
                 .build();
         s3Client.deleteBucket(deleteBucketRequest);
     }

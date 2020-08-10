@@ -18,13 +18,16 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @SpringBootTest
 public class BucketOperationsTest {
+
+    private static final String BUCKET = "bucket-javamultiplex-12";
+
     @Autowired
     private BucketOperations bucketOperations;
 
     @Test
     @Order(1)
     public void shouldCreateBucket() {
-        bucketOperations.createBucket("bucket-javamultiplex-12");
+        bucketOperations.createBucket(BUCKET);
     }
 
     @Test
@@ -38,13 +41,13 @@ public class BucketOperationsTest {
     @Test
     @Order(3)
     public void shouldDeleteBucket() {
-        bucketOperations.deleteEmptyBucket("bucket-javamultiplex-12");
+        bucketOperations.deleteEmptyBucket(BUCKET);
     }
 
     @Test
     @Order((4))
     public void shouldCheckBucketExistOrNot() {
-        boolean result = bucketOperations.isBucketExist("bucke-javamultiplex-12");
+        boolean result = bucketOperations.isBucketExist(BUCKET);
         assertFalse(result);
     }
 
