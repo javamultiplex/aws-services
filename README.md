@@ -1,6 +1,3 @@
-# AWS Services
-Code Examples of AWS Services in Java
-
 # AWS Networking
 
 1) Internet Gateway (IGW)
