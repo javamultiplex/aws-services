@@ -15,3 +15,8 @@
 - [IAM Deep Dive](https://www.youtube.com/watch?v=Zvz-qYYhvMk&list=PLZ1JBBu6d-P5QtZp5Fqvs2dIpK77eCudB)
 - [EC2 Foundation](https://www.youtube.com/watch?v=kMMybKqC2Y0&list=PLZ1JBBu6d-P5QtZp5Fqvs2dIpK77eCudB)
 - [S3 Deep Dive](https://www.youtube.com/watch?v=2nkF_AK96BE&list=PLZ1JBBu6d-P5QtZp5Fqvs2dIpK77eCudB)
+
+# Other AWS Resources
+
+- [VPC Masterclass](https://www.youtube.com/watch?v=LX5lHYGFcnA&list=PLZ1JBBu6d-P5QtZp5Fqvs2dIpK77eCudB)
+- [IAM Crash Course](https://www.youtube.com/watch?v=WYH8SQW6RJQ&list=PLZ1JBBu6d-P5QtZp5Fqvs2dIpK77eCudB)
