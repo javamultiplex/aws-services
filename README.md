@@ -20,3 +20,10 @@
 
 - [VPC Masterclass](https://www.youtube.com/watch?v=LX5lHYGFcnA&list=PLZ1JBBu6d-P5QtZp5Fqvs2dIpK77eCudB)
 - [IAM Crash Course](https://www.youtube.com/watch?v=WYH8SQW6RJQ&list=PLZ1JBBu6d-P5QtZp5Fqvs2dIpK77eCudB)
+
+
+# EC2
+
+- http://169.254.169.254/latest/meta-data
+- http://169.254.169.254/latest/dynamic/instance-identity/document
+- http://169.254.169.254/latest/user-data
