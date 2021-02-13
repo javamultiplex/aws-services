@@ -27,3 +27,7 @@
 - http://169.254.169.254/latest/meta-data
 - http://169.254.169.254/latest/dynamic/instance-identity/document
 - http://169.254.169.254/latest/user-data
+
+
+# Region Specific
+- AMI (Amazon Machine Image)
